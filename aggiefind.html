@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lost and Found App — Zarin Rahman Mohima</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <div class="nav-content">
+        <a href="index.html" class="nav-logo">ZRM</a>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#education">Education</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="index.html#contact" class="nav-contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container project-page">
+      <h1 class="page-title">Lost and Found App</h1>
+
+      <div class="project-content">
+        <p>Developing a Lost and Found app for NMSU that includes login with NMSU ID, and post visibility controls to help students and staff report and recover lost items across campus.</p>
+
+        <p><strong>GitHub:</strong> <a href="https://github.com/zrmohima/aggiefind" target="_blank" rel="noopener">https://github.com/zrmohima/aggiefind</a></p>
+
+        <nav class="project-nav">
+          <strong>Sections:</strong>
+          <ul>
+            <li><a href="#video-demo">Demo Video</a></li>
+            <li><a href="#motivation">Motivation</a></li>
+            <li><a href="#online-study">Online Study</a></li>
+            <li><a href="#prototyping">Prototyping Phase</a></li>
+            <li><a href="#user-study-1">User Study 1</a></li>
+            <li><a href="#user-study-2">User Study 2</a></li>
+          </ul>
+        </nav>
+
+        <section id="video-demo">
+          <h2>Demo Video</h2>
+          <p>Watch a short demo of AggieFind showing the functionality and workflow.</p>
+          <video controls preload="metadata" style="max-width:100%;height:auto">
+            <source src="Video_Demo.mp4" type="video/mp4">
+            Your browser does not support the video tag. <a href="Video_Demo.mp4">Download the demo</a>.
+          </video>
+        </section>
+
+        <section id="motivation">
+          <h2>Motivation</h2>
+          <p>If any item is lost within NMSU campus, there is no central management system which will ensure finding the lost item. 
+            Currently, students and staff rely on informal methods such as FSN posts or word-of-mouth,
+            which makes recovery slow and unreliable. Beyond basic functionality, our research showed that trust 
+            and prior experience strongly shape whether students will use a centralized app and most users prefer clear social cues, 
+            visible accountability, and simple privacy controls. These insights motivated us to design our app. 
+           
+            </p>
+        </section>
+
+        <section id="online-study">
+          <h2>Online Study</h2>
+          <p>We ran an initial online study to collect qualitative feedback on current behaviors and suggested some feedbacks for reporting lost/found items. Participants described common workarounds and highlighted trade-offs between discoverability and privacy. Findings from this phase directly informed feature priorities (college login, building-based visibility) and helped define the three core tasks used in the moderated usability tests: report a lost item, report a found item, and check for a match.</p>
+        </section>
+
+        <section id="prototyping">
+          <h2>Prototyping Phase</h2>
+          <p>We developed two concept prototypes to explore different trust models: <strong>Prototype A</strong> (Community Trust Model) emphasized social cues, transparency, and community-driven verification; <strong>Prototype B</strong> (AI Assistant Model) experimented with an intelligent assistant that proactively helps users report and match items.</p>
+          <p>Both prototypes were evaluated in counterbalanced tests. Prototype A scored higher on perceived social trust and clarity of admin workflows, while Prototype B demonstrated potential for reducing cognitive load through proactive suggestions. Results guided specific modifications (retaining clear status labels, improving photo upload flow, and combining user reporting with staff verification in a hybrid approach).</p>
+        </section>
+
+        <section id="user-study-1">
+          <h2>User Study 1</h2>
+          <p>Moderated usability test (we each took feedback from 6people) focused on three core tasks: (1) report a lost item, (2) report a found item, and (3) check for a match. Two prototypes (Prototype A and Prototype B) were counterbalanced across participants.</p>
+          <p>Key findings included:
+            <ul>
+              <li>Prior experience influenced participants' motivation to use the app.</li>
+              <li>Task 2 (reporting a found item) was identified as a critical flow that validates the staff-verified model.</li>
+              <li>Privacy concerns were present but not the primary barrier to use.</li>
+              <li>Visual design (color scheme and branding) affected perceived trust and usability.</li>
+              <li>Participants suggested a hybrid approach combining user reporting with staff verification.</li>
+            </ul>
+          </p>
+          <p><strong>Report:</strong> <a href="AGGIEFIND_USR_STUDY_1.pdf" target="_blank" rel="noopener">Download User Study 1 (PDF)</a></p>
+        </section>
+
+        <section id="user-study-2">
+          <h2>User Study 2</h2>
+          <p>To follow-up with our previous prototype, this time we went to ask 18 random students from NMSU for our field study. We run on campus over a two-week period to evaluate real-world usage. At this stage we understood that we don't really need an admin section rather we can handle this from student side where the student who will post has full authority to post/ mark found any object. The study measured metrics such as time-to-recovery, frequency of successful matches, and satisfaction with visibility controls and admin workflows.</p>
+          <p>Summary observations: participants generally appreciated building-based visibility controls and the admin approval flow; the study also surfaced areas for performance improvements (photo uploads) and clearer post status indicators.</p>
+          <p><strong>Report:</strong> <a href="AGGIEFIND_USR_STUDY_2.pdf" target="_blank" rel="noopener">Download User Study 2 (PDF)</a></p>
+        </section>
+
+        <p><a href="projects.html">← Back to Projects</a></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
